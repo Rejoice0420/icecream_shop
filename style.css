@@ -1,0 +1,233 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stack header, main layout, and footer vertically */
+    min-height: 100vh; /* Ensure the body takes at least full height */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+    
+}
+
+.header {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px; /* Add some padding */
+    background-color: #354f6a; /* Header background color */
+    color: white; /* Text color */
+    justify-content: center; /* Center items horizontally */
+}
+
+.logo {
+    width: 80px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between logo and text */
+}
+
+.header-title {
+    font-size: 1.5em; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+}
+
+
+
+.layout {
+    display: flex; /* Create a flex container for the main layout */
+    flex: 1; /* Allow the layout to grow and take available space */
+}
+
+.menu {
+    position: absolute; /* Keep the menu fixed */
+    top: 0px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    z-index: 500; /* Ensure it stays above other content */
+    background-color: #354f6a; /* Optional: background color to make it visible */
+    color: white; /* Text color */
+    padding: 0px; /* Add some padding */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.sidebar {
+    background-color: #354f6a; /* Sidebar background color */
+    color: black; /* Text color */
+    padding: 20px; /* Padding for sidebar */
+    width: 200px; /* Fixed width for sidebars */
+}
+
+.left-sidebar {
+    padding: 0.5%;
+    /* Left sidebar has the default styling */
+}
+
+.right-sidebar {
+    padding: 0.5%;
+}
+
+.main-content {
+    flex: 1; /* Allow main content to take the remaining space */
+    background-color: #f0f0f0; /* Background color for main content */
+    padding: 20px; /* Padding for main content */
+}
+
+footer {
+    background-color: #354f6a; /* Footer background color */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 0.1%; /* Padding around footer */
+    font-size: 0.5em; /* Decrease font size */
+    /*max-height: 50px; /* Set a maximum height */
+}   
+
+.container {
+    display: flex; 
+    gap: 10px;  
+    flex-wrap: nowrap; 
+    justify-content: center; /* Center the boxes within the container */
+}
+
+.box {
+    background-color: #7bb4cc;
+    border: 2px solid #354f6a;
+    border-radius: 10px;
+    padding: 10px; /* Adjust padding as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust width as needed */
+    text-align: center; /* Center text within the box */
+    margin: 30px; 
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content horizontally */
+
+}
+
+.box img {
+    width: 75%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 30px; /* Optional: rounded corners for the image */
+}
+
+.container2 {
+    display: flex; 
+    gap: 10px;  
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.box2 {
+    background-color: #7bb4cc;
+    border: 2px solid #354f6a;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+    margin: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* New styles for image and checklist */
+.image-checklist {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.image-checklist img {
+    width: 200px; /* Adjust image size as needed */
+    border-radius: 8px;
+}
+
+.checklist {
+    text-align: left;
+    font-size: 28px;
+}
+
+.checklist input[type="checkbox"] {
+    width: 20px;  /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    transform: scale(1.5); /* You can use scale to make it larger as well */
+    margin-right: 10px; /* Add space between checkbox and text */
+}
+
+
+.box2 img {
+    width: 50%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 30px; /* Optional: rounded corners for the image */
+}
+
+.container1 {
+    display: flex; /* Use flexbox to align items horizontally */
+    list-style-type: none; /* Remove default list styling if needed */
+    justify-content: center; /* Center the boxes horizontally */
+    
+}
+
+.item {
+    width: 0.1px; /* Set a fixed width */
+    height: fit-content; /* Set a fixed height */
+    margin-right: 1px; /* Adjust the gap as needed */
+    /* background-color: lightblue; /* Optional: to visualize the box */
+}
+
+
+.box1 img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 30px; /* Optional: rounded corners for the image */
+}
+
+
+.box1 {
+    background-color: #67caf4;
+    border: 2px solid #354f6a;
+    border-radius: 10px;
+    padding: 10px; /* Adjust padding as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px; /* Adjust width as needed */
+    text-align: center; /* Center text within the box */
+    margin: 30px; 
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.box1 h1 {
+    font-size: 1em; /* Change font size as needed */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text within h1 */
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity-control button,
+.quantity,
+.add-to-cart {
+    width: 40px;       /* Set consistent width for +, - buttons, and quantity display */
+    height: 40px;      /* Set consistent height for +, - buttons, and quantity display */
+    font-size: 18px;   /* Adjust font size */
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+.quantity {
+    line-height: 40px; /* Center-align number vertically */
+}
+
+.add-to-cart {
+    width: 100%;       /* Full width for 'Add to Cart' button */
+    margin-top: 10px;  /* Space above 'Add to Cart' */
+    height: 40px;      /* Match height with +, - buttons */
+    font-size: 18px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+}
+
+
+
